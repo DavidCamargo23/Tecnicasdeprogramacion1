@@ -4,9 +4,13 @@
     {
         static void Main(string[] args)
         {
-            //coment
-            for (int i = 0; i < args.Length; i++) { }
-            Console.WriteLine("Hello, World!");
+            //Ejercicio 1
+            Console.WriteLine("Digite un numero");
+            string dato = Console.ReadLine();
+            int num = Int32.Parse(dato);
+            int num2 = num + 1;
+            Console.WriteLine("el numero es: " + num2);
+
         }
     }
 }
