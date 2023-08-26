@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //
             //Ejercicio 1
             Console.WriteLine("Digite un numero");
             string dato = Console.ReadLine();
