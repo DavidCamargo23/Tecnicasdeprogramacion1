@@ -64,25 +64,38 @@
             double fahren1 = ((celsius1 * 9)/5)+32; //(0 °C × 9/5) + 32 = 32 °F
             Console.WriteLine("El valor en grados Fahrenheit es: " + fahren1);
             Console.WriteLine("/////////////////////////////////////////////////////////////");
-            //Diseñar un algoritmo que calcule el volumen de un cilindro dados su radio y altura(primero el programa deberá verificar si son positivas).
+          //Ejercicio 7: Diseñar un algoritmo que calcule el volumen de un cilindro dados su radio y altura(primero el programa deberá verificar si son positivas).
             Console.WriteLine("Datos para la calcular el volumen de un cilindro.");
             Console.WriteLine("Digite la altura:");
-            string alt2 = Console.ReadLine();
-            int altCi = Int32.Parse(alt2);
-            Console.WriteLine("El volumen del cilindro es: " + volumenCi);
+            string alt3 = Console.ReadLine();
+            int altCi1 = Int32.Parse(alt3);
+            if (altCi1 < 0)
+            { 
+             Console.WriteLine("El número digitado no es Positivo");
+             Console.WriteLine("Digite nuevamente la altura:");
+             string alt3 = Console.ReadLine();
+             int altCi1 = Int32.Parse(alt3); 
+            }
+            else
+            Console.WriteLine("Digite el radio:");
+            string rad2 = Console.ReadLine();
+            int radCi1 = Int32.Parse(rad2);
+            if (radCi1 < 0)
+            {
+                Console.WriteLine("El número digitado no es Positivo");
+                Console.WriteLine("Digite nuevamente el radio:");
+                string rad2 = Console.ReadLine();
+                int radCi1 = Int32.Parse(rad2);
+            }
+            else
+            double volumenCi1= Math.PI * (Math.Pow(radCi1, 2)) * altCi1;
+            Console.WriteLine("El volumen del cilindro es: " + volumenCi1);
+            Console.WriteLine("/////////////////////////////////////////////////////////////");
             //Crear un algoritmo que calcule si dos números son divisibles.Para ello, se piden un primer número y un segundo número, entonces mostrar
             //un cartel que diga “es divisible” si el segundo número es divisible al primero.
-            Console.WriteLine("Datos para la calcular el volumen de un cilindro.");
-            Console.WriteLine("Digite la altura:");
-            string alt2 = Console.ReadLine();
-            int altCi = Int32.Parse(alt2);
-            Console.WriteLine("El volumen del cilindro es: " + volumenCi);
+           // Console.WriteLine("Datos para la calcular el volumen de un cilindro.");
+           // Console.WriteLine("Digite la altura:");
             //Diseñar un algoritmo para calcular el porcentaje de hombres y de mujeres que hay en un grupo, dados los totales de hombres y de mujeres.
-            Console.WriteLine("Datos para la calcular el volumen de un cilindro.");
-            Console.WriteLine("Digite la altura:");
-            string alt2 = Console.ReadLine();
-            int altCi = Int32.Parse(alt2);
-            Console.WriteLine("El volumen del cilindro es: " + volumenCi);
 
         }
     }
