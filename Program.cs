@@ -74,7 +74,9 @@
              Console.WriteLine("El número digitado no es Positivo");
              Console.WriteLine("Digite nuevamente la altura:");
              string alt3 = Console.ReadLine();
-             int altCi1 = Int32.Parse(alt3); 
+             int altCi1 = Int32.Parse(alt3);
+                altCi1 = altCi2;
+                
             }
             else
             Console.WriteLine("Digite el radio:");
@@ -86,6 +88,7 @@
                 Console.WriteLine("Digite nuevamente el radio:");
                 string rad2 = Console.ReadLine();
                 int radCi1 = Int32.Parse(rad2);
+                radCi1 = radCi2;
             }
             else
             double volumenCi1= Math.PI * (Math.Pow(radCi1, 2)) * altCi1;
