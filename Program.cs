@@ -13,10 +13,8 @@
          Console.WriteLine("Ejercicio 6: Diseñar un algoritmo que convierta y muestre la temperatura en Fahrenheit ingresando la temperatura en Celsius.");
          Console.WriteLine("Ejercicio 7: Diseñar un algoritmo que calcule el volumen de un cilindro dados su radio y altura(primero el programa deberá verificar si son positivas).");
          Console.WriteLine("Ejercicio 2:Diseñar un algoritmo que genere un número aleatorio del 0 al 200,lo muestre y luego calcule y muestre el mismo número aumentado en un 30 %.");
-         Console.WriteLine("Ejercicio 2:Diseñar un algoritmo que genere un número aleatorio del 0 al 200,lo muestre y luego calcule y muestre el mismo número aumentado en un 30 %.");
-         Console.WriteLine("Ejercicio 2:Diseñar un algoritmo que genere un número aleatorio del 0 al 200,lo muestre y luego calcule y muestre el mismo número aumentado en un 30 %.");
-         Console.WriteLine("Ejercicio 2:Diseñar un algoritmo que genere un número aleatorio del 0 al 200,lo muestre y luego calcule y muestre el mismo número aumentado en un 30 %.");
-         Console.WriteLine("Ejercicio 2:Diseñar un algoritmo que genere un número aleatorio del 0 al 200,lo muestre y luego calcule y muestre el mismo número aumentado en un 30 %.");
+         Console.WriteLine("Ejercicio 2:.");
+         Console.WriteLine("10:Salir.");
             int numero = int.Parse(Console.ReadLine());
          switch (numero)
          {  
@@ -79,7 +77,7 @@
                     double celsius1 = Int32.Parse(celsiusUsu);
                     double fahren1 = ((celsius1 * 9) / 5) + 32; //(0 °C × 9/5) + 32 = 32 °F
                     Console.WriteLine("El valor en grados Fahrenheit es: " + fahren1);
-                break;
+                    break;
             case 7:
                    Console.WriteLine("Datos para calcular el volumen de un cilindro.");
                    Console.WriteLine("Digite la altura:");
@@ -103,33 +101,17 @@
                         Console.WriteLine("Digite nuevamente el radio:");
                         string rad3 = Console.ReadLine();
                         radCi1 = Int32.Parse(rad3);
-                    }
-                    double volumenCi1 = Math.PI * Math.Pow(radCi1, 2) * altCi1;
-                    Console.WriteLine("El volumen del cilindro es: " + volumenCi1);
-            break;
-            case 8:
-             break;
-            case 9:
-             break;
-            case 10:
-             break;
-            case 11:
-             break;
-            case 12:
-             break;
-            default:
-                    Console.WriteLine("Opción no válida.");
-            break;
-                    //Crear un algoritmo que calcule si dos números son divisibles.Para ello, se piden un primer número y un segundo número, entonces mostrar
-                    //un cartel que diga “es divisible” si el segundo número es divisible al primero.
-                    // Console.WriteLine("Datos para la calcular el volumen de un cilindro.");
-                    // Console.WriteLine("Digite la altura:");
-                    //Diseñar un algoritmo para calcular el porcentaje de hombres y de mujeres que hay en un grupo, dados los totales de hombres y de mujeres.
+                        }
+                        double volumenCi1 = Math.PI * Math.Pow(radCi1, 2) * altCi1;
+                        Console.WriteLine("El volumen del cilindro es: " + volumenCi1);
+                    } 
+                 break;
             }
 
         }
     }
 }
+
 
 
 
