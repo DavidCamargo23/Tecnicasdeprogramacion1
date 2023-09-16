@@ -18,7 +18,10 @@ namespace Tecnicasdeprogramacion1
             Console.WriteLine("7: Calcular el volumen de un cilindro dados su radio y altura (verificando si son positivas).");
             Console.WriteLine("8: Crear un algoritmo que calcule si dos números son divisibles.");
             Console.WriteLine("9: Diseñar un algoritmo para calcular el porcentaje de hombres y de mujeres que hay en un grupo, dados los totales de hombres y de mujeres.");
-            Console.WriteLine("10: Salir");
+            Console.WriteLine("10: Diseñar un algoritmo que indique con carteles si el número ingresado es negativo, positivo o nulo.");
+            Console.WriteLine("11: Ingresar tres números y mostrar el mayor(asuma que todos son distintos entre sí)");
+            Console.WriteLine("12: Realice un algoritmo para mostrar un cartel que indique si un triángulo es «escaleno», «equilátero» o «isósceles» ingresando sus lados");
+            Console.WriteLine("13: Salir");
 
             int numero = int.Parse(Console.ReadLine());
 
@@ -58,6 +61,12 @@ namespace Tecnicasdeprogramacion1
                     HombreMujer(); 
                     break;
                 case 10:
+                    break;
+                case 11:
+                    break;
+                case 12:
+                    break;
+                case 13:
                     break;
 
                 default:
