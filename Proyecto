@@ -1,0 +1,22 @@
+public class Rifa 
+{ 
+    public string Descripcion { get; set; } 
+    public DateTime FechaSorteo { get; set; } 
+    public decimal ValorBoleta { get; set; } 
+    public List<Puesto> Puestos { get; set; } 
+} 
+ 
+public class Puesto 
+{ 
+    public int Numero { get; set; } 
+    public bool EstaComprado { get; set; } 
+    public Comprador Comprador { get; set; } 
+} 
+ 
+public class Comprador 
+{ 
+    public string Nombre { get; set; } 
+    public string MetodoPago { get; set; } 
+    public DateTime? FechaPago { get; set; } 
+} 
+ 
