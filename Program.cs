@@ -57,18 +57,22 @@ namespace Tecnicasdeprogramacion1
                 case 8:
                     Divisible();
                     break;
+                    
                 case 9:
                     HombreMujer(); 
                     break;
+                    
                 case 10:
+                    IndicarSigno();
                     break;
+                    
                 case 11:
-                    break;
+                    EncontrarMayor();
+                break;
+                    
                 case 12:
-                    break;
-                case 13:
-                    break;
-
+                    ClasificarTriangulo();
+                break;
                 default:
                     Console.WriteLine("Opción no válida.");
                     break;
@@ -207,6 +211,61 @@ namespace Tecnicasdeprogramacion1
             return;
 
         }
+        public static void IndicarSigno()
+        {
+            Console.WriteLine("Por favor, ingresa un número:");
+            int numero = int.Parse(Console.ReadLine());
+        
+            if (numero > 0)
+            {
+                Console.WriteLine("El número ingresado es positivo.");
+            }
+            else if (numero < 0)
+            {
+                Console.WriteLine("El número ingresado es negativo.");
+            }
+            else
+            {
+                Console.WriteLine("El número ingresado es nulo.");
+            }
+        }
+
+        public static void EncontrarMayor()
+            {
+                Console.WriteLine("Por favor, ingresa el primer número:");
+                int numero1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Por favor, ingresa el segundo número:");
+                int numero2 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Por favor, ingresa el tercer número:");
+                int numero3 = int.Parse(Console.ReadLine());
+            
+                int mayor = Math.Max(Math.Max(numero1, numero2), numero3);
+                Console.WriteLine($"El mayor de los tres números es: {mayor}");
+            }
+
+        public static void ClasificarTriangulo()
+        {
+            Console.WriteLine("Por favor, ingresa el primer lado del triángulo:");
+            double lado1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Por favor, ingresa el segundo lado del triángulo:");
+            double lado2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Por favor, ingresa el tercer lado del triángulo:");
+            double lado3 = double.Parse(Console.ReadLine());
+        
+            if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3)
+            {
+                Console.WriteLine("El triángulo es escaleno.");
+            }
+            else if (lado1 == lado2 && lado2 == lado3)
+            {
+                Console.WriteLine("El triángulo es equilátero.");
+            }
+            else
+            {
+                Console.WriteLine("El triángulo es isósceles.");
+            }
+        }
+
     }
 }
 
