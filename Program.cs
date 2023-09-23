@@ -126,7 +126,7 @@ namespace Tecnicasdeprogramacion1
             double volumenCilindro = Math.PI * Math.Pow(radioCilindro, 2) * alturaCilindro;
             Console.WriteLine("El volumen del cilindro es: " + volumenCilindro); ;
         }
-        public static string ConvertirCm()
+        public static void ConvertirCm()
         {
             Console.WriteLine("Por favor, ingresa la longitud en centímetros:");
             double longitudCm = double.Parse(Console.ReadLine());
